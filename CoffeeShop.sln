@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34607.119
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeShop.Web", "CoffeeShop.Web\CoffeeShop.Web.csproj", "{DC271BBC-078C-4A9D-8B21-6399ACE6ABD9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoffeeShop.Web", "CoffeeShop.Web\CoffeeShop.Web.csproj", "{DC271BBC-078C-4A9D-8B21-6399ACE6ABD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeShop.Domain", "CoffeeShop.Domain\CoffeeShop.Domain.csproj", "{50B7D68F-AB3E-4E1E-B49C-79978A7EE9FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeShop.Application", "CoffeeShop.Application\CoffeeShop.Application.csproj", "{F8F744AB-0B92-45A1-A608-2330436899BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeShop.Infrastructure", "CoffeeShop.Infrastructure\CoffeeShop.Infrastructure.csproj", "{3C3EE424-BC9E-4014-B511-6856CD83671B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{DC271BBC-078C-4A9D-8B21-6399ACE6ABD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC271BBC-078C-4A9D-8B21-6399ACE6ABD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC271BBC-078C-4A9D-8B21-6399ACE6ABD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50B7D68F-AB3E-4E1E-B49C-79978A7EE9FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50B7D68F-AB3E-4E1E-B49C-79978A7EE9FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50B7D68F-AB3E-4E1E-B49C-79978A7EE9FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50B7D68F-AB3E-4E1E-B49C-79978A7EE9FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8F744AB-0B92-45A1-A608-2330436899BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8F744AB-0B92-45A1-A608-2330436899BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8F744AB-0B92-45A1-A608-2330436899BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8F744AB-0B92-45A1-A608-2330436899BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C3EE424-BC9E-4014-B511-6856CD83671B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C3EE424-BC9E-4014-B511-6856CD83671B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C3EE424-BC9E-4014-B511-6856CD83671B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C3EE424-BC9E-4014-B511-6856CD83671B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
