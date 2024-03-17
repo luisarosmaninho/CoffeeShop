@@ -22,6 +22,64 @@ namespace CoffeeShop.Infrastructure.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("CoffeeShop.Domain.Entities.Acessorios", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime?>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double>("Price")
+                        .HasColumnType("float");
+
+                    b.Property<DateTime?>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Acessorios");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Description = "The Espresso Elegance Cup embodies the perfect fusion of form and function, designed to elevate your coffee-drinking experience to new heights of sophistication. Crafted from fine porcelain, its smooth, cylindrical silhouette is adorned with delicate golden accents that add a touch of luxury to your morning ritual.",
+                            ImageUrl = "https://placehold.co/600x400",
+                            Name = "Espresso Elegance Cup",
+                            Price = 20.0
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Description = "The Cozy Comfort Mug is more than just a vessel for your morning pick-me-up; it's a warm embrace on a chilly day, a sanctuary of tranquility amidst the hustle and bustle of daily life. Crafted from durable ceramic, its generous size and sturdy handle provide a reassuring grip, inviting you to wrap your hands around it and savor each sip of your favorite brew.",
+                            ImageUrl = "https://placehold.co/600x400",
+                            Name = "Cozy Comfort Mug",
+                            Price = 10.0
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Description = "The BrewMaster Pour-Over Kit is the ultimate companion for coffee aficionados who appreciate the artistry and precision of manual brewing methods. This comprehensive kit includes a sleek glass pour-over coffee maker, a precision-crafted stainless steel dripper, and a set of premium reusable filters.\r\n\r\n",
+                            ImageUrl = "https://placehold.co/600x400",
+                            Name = "BrewMaster Pour-Over Kit",
+                            Price = 40.0
+                        });
+                });
+
             modelBuilder.Entity("CoffeeShop.Domain.Entities.Produto", b =>
                 {
                     b.Property<int>("Id")

@@ -9,6 +9,7 @@ namespace CoffeeShop.Infrastructure.Data
         {
         }
         public DbSet<Produto> Produtos { get; set; }
+        public DbSet<Acessorios> Acessorios { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -95,7 +96,35 @@ new Produto
     Price = 4.00,
 }
    );
-        }
+
+            modelBuilder.Entity<Acessorios>().HasData(
+                new Acessorios
+                {
+                    Id = 1,
+                    Name = "Espresso Elegance Cup",
+                    Description = "The Espresso Elegance Cup embodies the perfect fusion of form and function, designed to elevate your coffee-drinking experience to new heights of sophistication. Crafted from fine porcelain, its smooth, cylindrical silhouette is adorned with delicate golden accents that add a touch of luxury to your morning ritual.",
+                    ImageUrl = "https://placehold.co/600x400",
+                    Price = 20,
+                },
+new Acessorios
+{
+    Id = 2,
+    Name = "Cozy Comfort Mug",
+    Description = "The Cozy Comfort Mug is more than just a vessel for your morning pick-me-up; it's a warm embrace on a chilly day, a sanctuary of tranquility amidst the hustle and bustle of daily life. Crafted from durable ceramic, its generous size and sturdy handle provide a reassuring grip, inviting you to wrap your hands around it and savor each sip of your favorite brew.",
+    ImageUrl = "https://placehold.co/600x400",
+    Price = 10,
+},
+new Acessorios
+{
+    Id = 3,
+    Name = "BrewMaster Pour-Over Kit",
+    Description = "The BrewMaster Pour-Over Kit is the ultimate companion for coffee aficionados who appreciate the artistry and precision of manual brewing methods. This comprehensive kit includes a sleek glass pour-over coffee maker, a precision-crafted stainless steel dripper, and a set of premium reusable filters.\r\n\r\n",
+    ImageUrl = "https://placehold.co/600x400",
+    Price = 40,
+}
+);
+
+}
     }
 
 }

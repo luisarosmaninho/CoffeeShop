@@ -1,0 +1,26 @@
+﻿
+@model IEnumerable<CoffeeShop.Domain.Entities.Acessorios>
+
+      <h1>Acessorios List</h1>
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                   
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (var obj in Model)
+                {
+                    <tr>
+                        <td>@obj.Name</td>
+                        <td>@obj.Description</td>
+                        <td>@obj.Price</td>
+                   </tr>
+                }
+            </tbody>
+        </table>
+   
