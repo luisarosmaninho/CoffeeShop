@@ -12,8 +12,8 @@ namespace CoffeeShop.Web.Controllers
         }
         public IActionResult Index()
         {
-            var Acessorios = _db.Acessorios.ToList();
-            return View();
+            var acessorios = _db.Acessorios.ToList();
+            return View(acessorios);
         }
     }
 }
